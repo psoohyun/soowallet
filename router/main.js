@@ -9,8 +9,23 @@ module.exports = function(app) {
      app.get('/',function(req,res){
         res.render('index.html')
      });
-     app.get('/about',function(req,res){
-        res.render('about.html');
+     app.get('/blog-post',function(req,res){
+        res.render('blog-post.html');
+    });
+     app.get('/blog',function(req,res){
+      res.render('blog.html');
+    });
+     app.get('/contact',function(req,res){
+      res.render('contact.html');
+    });
+     app.get('/portfolio-item',function(req,res){
+      res.render('portfolio-item.html');
+    });
+     app.get('/portfolio',function(req,res){
+      res.render('portfolio.html');
+    });
+     app.get('/ui-elements',function(req,res){
+      res.render('ui-elements.html');
     });
      
     app.get('/listall', function (req, res) {
